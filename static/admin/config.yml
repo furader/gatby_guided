@@ -8,8 +8,6 @@ collections:
     label: "Blog"
     folder: "content/blog"
     slug:  "{{year}}-{{month}}-{{day}}-{{slug}}"
-    editor:
-      preview:false
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string"}
