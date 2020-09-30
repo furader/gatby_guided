@@ -27,7 +27,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <p>{post.frontmatter.date}</p>
         </header>
         <section className="container clearfix">
-        <section className={post.frontmatter.classes}
+        <section className={post.frontmatter.classes} style={  { color: "red",  backgroundColor: "#6c757d !important",     position: "relative"}}
         
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"

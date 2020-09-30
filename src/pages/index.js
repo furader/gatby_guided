@@ -51,7 +51,7 @@ const BlogIndex = ({ data, location }) => {
                 </header>
                 hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
                 <section className="container clearfix">
-                <section className={post.frontmatter.classes}>
+                <section className={post.frontmatter.classes} style={    {backgroundColor: "#6c757d !important",     position: "relative"}}>
                   <p
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description || post.excerpt,
