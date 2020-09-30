@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import '../css/bootstrap.css'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -25,10 +26,13 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
         </header>
-        <section
+        <section className="container clearfix">
+        <section className={post.frontmatter.classes}
+        
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
+        </section>
         <hr />
         <footer>
           <Bio />

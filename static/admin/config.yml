@@ -19,6 +19,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string"}
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Classes", name: "classes", widget: "string"}
       - { label: "Description", name: "description", widget: "string"}
       - { label: "Cover", name: "cover", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown"}
@@ -30,6 +31,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string"}
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Classes", name: "classes", widget: "string"}
       - { label: "Description", name: "description", widget: "string"}
       - { label: "Cover", name: "cover", widget: "image", required: false}
       - { label: "Body", name: "body", widget: "markdown"}

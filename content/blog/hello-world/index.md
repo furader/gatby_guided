@@ -1,5 +1,6 @@
 ---
 title: Hello World
+classes: col-12 bg-danger
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
 ---

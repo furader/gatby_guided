@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import '../css/bootstrap.css'
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -48,13 +49,16 @@ const BlogIndex = ({ data, location }) => {
                   </h2>
                   <small>{post.frontmatter.date}</small>
                 </header>
-                <section>
+                hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+                <section className="container clearfix">
+                <section className={post.frontmatter.classes}>
                   <p
                     dangerouslySetInnerHTML={{
                       __html: post.frontmatter.description || post.excerpt,
                     }}
                     itemProp="description"
                   />
+                </section>
                 </section>
               </article>
             </li>
@@ -84,6 +88,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          classes
         }
       }
     }
